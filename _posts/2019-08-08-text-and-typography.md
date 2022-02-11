@@ -13,12 +13,12 @@ image:
   width: 800
   height: 500
 ---
-
 This post is to show Markdown syntax rendering on [**Chirpy**](https://github.com/cotes2020/jekyll-theme-chirpy/fork), you can also use it as an example of writing. Now, let's start looking at text and typography.
 
-
 ## Titles
+
 ---
+
 # H1 - heading
 
 <h2 data-toc-skip>H2 - heading</h2>
@@ -60,9 +60,9 @@ Fluttering and dancing in the breeze.
 ### Task list
 
 - [ ] TODO
-- [x] Completed
+- [X] Completed
 - [ ] Defeat COVID-19
-  - [x] Vaccine production
+  - [X] Vaccine production
   - [ ] Economic recovery
   - [ ] People smile again
 
@@ -81,25 +81,25 @@ Moon
 ## Prompts
 
 > An example showing the `note` type prompt.
-{: .prompt-note }
+> {: .prompt-note }
 
 > An example showing the `warning` type prompt.
-{: .prompt-warning }
+> {: .prompt-warning }
 
 > An example showing the `danger` type prompt.
-{: .prompt-danger }
+> {: .prompt-danger }
 
 ## Tables
 
 | Company                      | Contact          | Country |
-|:-----------------------------|:-----------------|--------:|
+| :--------------------------- | :--------------- | ------: |
 | Alfreds Futterkiste          | Maria Anders     | Germany |
-| Island Trading               | Helen Bennett    | UK      |
-| Magazzini Alimentari Riuniti | Giovanni Rovelli | Italy   |
+| Island Trading               | Helen Bennett    |      UK |
+| Magazzini Alimentari Riuniti | Giovanni Rovelli |   Italy |
 
 ## Links
 
-<http://127.0.0.1:4000>
+[http://127.0.0.1:4000](http://127.0.0.1:4000)
 
 ## Footnote
 
@@ -155,11 +155,15 @@ _shadow effect (visible in light mode)_
 
 The mathematics powered by [**MathJax**](https://www.mathjax.org/):
 
-$$ \sum_{n=1}^\infty 1/n^2 = \frac{\pi^2}{6} $$
+$$
+\sum_{n=1}^\infty 1/n^2 = \frac{\pi^2}{6}
+$$
 
 When $a \ne 0$, there are two solutions to $ax^2 + bx + c = 0$ and they are
 
-$$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
+$$
+x = {-b \pm \sqrt{b^2-4ac} \over 2a}
+$$
 
 ## Inline code
 
@@ -203,9 +207,6 @@ fi;
   "colors/light-typography",
   "colors/dark-typography"
 ```
-{: file='_sass/jekyll-theme-chirpy.scss'}
 
-## Reverse Footnote
-
-[^footnote]: The footnote source
-[^fn-nth-2]: The 2nd footnote source
+[^footnote]: 
+[^fn-nth-2]:
