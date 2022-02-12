@@ -1,13 +1,11 @@
 ---
-layout: post
 title: Interaction-Oriented Service EntityPlacement in Edge Computing Placement in Edge Computing
 date: 2022-02-12 21:46 +0800
 author:
   name: Sophia-whale
   link: https://github.com/sophia-whale
-description:
-categories:[report]
-tags:[interaction-oriented, edge computing]
+categories: [Report, Edge Computing]
+tags: [interaction-oriented, edge computing]
 math: true
 mermaid: true
 published: false
