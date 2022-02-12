@@ -41,7 +41,7 @@ social:
   email: whalefy1024@outlook.com             # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/username      # change to your twitter homepage
+    # https://twitter.com/username      # change to your twitter homepage
     - https://github.com/sophia-whale       # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
@@ -84,6 +84,21 @@ avatar: /assets/img/profile/duckduck.png
 
 # boolean type, the global switch for ToC in posts.
 toc: true
+
+jekyll_compose:
+  auto_open: true
+  default_front_matter:
+    posts:
+      author:
+        name: Sophia-whale
+        link: https://github.com/sophia-whale
+      description:
+      categories: [first, second]
+      tags: [tag1, tag2]
+      math: true
+      mermaid: true
+      published: false
+      sitemap: false
 
 comments:
   active:         # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
