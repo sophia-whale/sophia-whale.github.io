@@ -8,8 +8,6 @@ categories: [Report, Edge Computing]
 tags: [interaction-oriented, edge computing]
 math: true
 mermaid: true
-published: false
-sitemap: false
 ---
 
 # Interaction-Oriented Service Entity Placement in Edge Computing

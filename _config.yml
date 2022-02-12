@@ -97,8 +97,6 @@ jekyll_compose:
       tags:
       math: true
       mermaid: true
-      published: false
-      sitemap: false
 
 comments:
   active:         # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
