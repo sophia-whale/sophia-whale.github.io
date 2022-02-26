@@ -26,8 +26,14 @@ mermaid: true
 ### 1.3 关系数据库
 
 1. 关系模型
+   遵循第一范式，通过关系代数基于表进行操作。
 2. 基本SQL语言
+   增删改查
 3. 对象——关系模型
+   表格内容可以为封装后的复杂类型
+
+   ![img-description](/assets/posts/20220226/object-database-example.png){: .normal}
+   _object-database-example_
 4. 访问数据库的程序
 5. 数据库设计*
 6. 完整性约束、安全、视图*
