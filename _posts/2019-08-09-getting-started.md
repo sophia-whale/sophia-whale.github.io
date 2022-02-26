@@ -6,9 +6,7 @@ author:
 date: 2019-08-09 20:55:00 +0800
 categories: [Blogging, Tutorial]
 tags: [getting started]
-pin: true
 ---
-
 ## Prerequisites
 
 Follow the instructions in the [Jekyll Docs](https://jekyllrb.com/docs/installation/) to complete the installation of `Ruby`, `RubyGems`, `Jekyll`, and `Bundler`. In addition, [Git](https://git-scm.com/) is also required to be installed.
@@ -24,7 +22,7 @@ There are two ways to create a new repository for this theme:
 
 #### Option 1. Using the Chirpy Starter
 
-Create a new repository from the [**Chirpy Starter**][use-starter] and name it `<GH_USERNAME>.github.io`, where `GH_USERNAME` represents your GitHub username.
+Create a new repository from the [Chirpy Starter][use-starter] and name it `<GH_USERNAME>.github.io`, where `GH_USERNAME` represents your GitHub username.
 
 #### Option 2. Forking on GitHub
 
@@ -37,18 +35,16 @@ $ bash tools/init.sh
 ```
 
 > If you don't want to deploy your site on GitHub Pages, append option `--no-gh` at the end of the above command.
-{: .prompt-note }
+> {: .prompt-note }
 
 The above command will:
 
 1. Removes some files or directories from your repository:
-    - `.travis.yml`{: .filepath}
-    - files under `_posts`{: .filepath}
 
+   - `.travis.yml`{: .filepath}
+   - files under `_posts`{: .filepath}
 2. If the option `--no-gh` is provided, the directory `.github`{: .filepath} will be deleted. Otherwise, set up the GitHub Action workflow by removing the extension `.hook`{: .filepath} of `.github/workflows/pages-deploy.yml.hook`{: .filepath}, and then remove the other files and directories in the folder `.github`{: .filepath}.
-
 3. Removes item `Gemfile.lock` from `.gitignore`{: .filepath}.
-
 4. Creates a new commit to save the changes automatically.
 
 ### Installing Dependencies
@@ -74,7 +70,7 @@ Update the variables of `_config.yml`{: .filepath} as needed. Some of them are t
 
 If you need to customize the stylesheet, copy the theme's `assets/css/style.scss`{: .filepath} to the same path on your Jekyll site, and then add the custom style at the end of the style file.
 
-Starting from [`v4.1.0`][chirpy-4.1.0], if you want to overwrite the SASS variables defined in `_sass/addon/variables.scss`{: .filepath}, create a new file `_sass/variables-hook.scss`{: .filepath} and assign new values to the target variable in it.
+Starting from , if you want to overwrite the SASS variables defined in `_sass/addon/variables.scss`{: .filepath}, create a new file `_sass/variables-hook.scss`{: .filepath} and assign new values to the target variable in it.
 
 ### Running Local Server
 
@@ -93,7 +89,7 @@ $ docker run -it --rm \
     jekyll serve
 ```
 
-After a while, the local service will be published at _<http://127.0.0.1:4000>_.
+After a while, the local service will be published at _[http://127.0.0.1:4000](http://127.0.0.1:4000)_.
 
 ## Deployment
 
@@ -108,9 +104,7 @@ For security reasons, GitHub Pages build runs on `safe` mode, which restricts us
 Quickly check the files needed for GitHub Actions build:
 
 - Ensure your Jekyll site has the file `.github/workflows/pages-deploy.yml`{: .filepath}. Otherwise, create a new one and fill in the contents of the [sample file][workflow], and the value of the `on.push.branches` should be the same as your repo's default branch name.
-
 - Ensure your Jekyll site has file `tools/deploy.sh`{: .filepath}. Otherwise, copy it from here to your Jekyll site.
-
 - Furthermore, if you have committed `Gemfile.lock`{: .filepath} to the repo, and your runtime system is not Linux, don't forget to update the platform list in the lock file:
 
   ```console
@@ -122,11 +116,9 @@ After the above steps, rename your repository to `<GH_USERNAME>.github.io` on Gi
 Now publish your Jekyll site by:
 
 1. Push any commit to remote to trigger the GitHub Actions workflow. Once the build is complete and successful, a new remote branch named `gh-pages` will appear to store the built site files.
+2. Browse to your repository on GitHub. Select the tab _Settings_, then click _Pages_ in the left navigation bar, and then in the section **Source** of _GitHub Pages_, select the `/(root)` directory of branch `gh-pages` as the [publishing source][pages-src]. Remember to click `<kbd>`Save`</kbd>` before leaving.
 
-2. Browse to your repository on GitHub. Select the tab _Settings_, then click _Pages_ in the left navigation bar, and then in the section **Source** of _GitHub Pages_, select the `/(root)` directory of branch `gh-pages` as the [publishing source][pages-src]. Remember to click <kbd>Save</kbd> before leaving.
-
-    ![gh-pages-sources](/posts/20190809/gh-pages-sources.png){: width="1580" height="250" }
-
+   ![gh-pages-sources](/posts/20190809/gh-pages-sources.png){: width="1580" height="250" }
 3. Visit your website at the address indicated by GitHub.
 
 ### Manually Build and Deploy
@@ -161,6 +153,7 @@ It depends on how you use the theme:
   - gem "jekyll-theme-chirpy", "~> 3.2", ">= 3.2.1"
   + gem "jekyll-theme-chirpy", "~> 3.3", ">= 3.3.0"
   ```
+
   {: .nolineno file="Gemfile" }
 
   And then execute the following command:
@@ -170,9 +163,8 @@ It depends on how you use the theme:
   ```
 
   As the version upgrades, the critical files (for details, see the [Startup Template][starter]) and configuration options will change. Please refer to the [Upgrade Guide](https://github.com/cotes2020/jekyll-theme-chirpy/wiki/Upgrade-Guide) to keep your repo's files in sync with the latest version of the theme.
-
 - If you forked from the source project (there will be `gemspec` in the `Gemfile`{: .filepath} of your site), then merge the [latest upstream tags][latest-tag] into your Jekyll site to complete the upgrade.
-The merge is likely to conflict with your local modifications. Please be patient and careful to resolve these conflicts.
+  The merge is likely to conflict with your local modifications. Please be patient and careful to resolve these conflicts.
 
 [starter]: https://github.com/cotes2020/chirpy-starter
 [use-starter]: https://github.com/cotes2020/chirpy-starter/generate

@@ -85,6 +85,7 @@ avatar: /assets/img/profile/duckduck.png
 # boolean type, the global switch for ToC in posts.
 toc: true
 
+# create a new post -- a template
 jekyll_compose:
   auto_open: true
   default_front_matter:
@@ -93,8 +94,8 @@ jekyll_compose:
         name: Sophia-whale
         link: https://github.com/sophia-whale
       description:
-      categories:
-      tags:
+      categories: [Datebase, Chapter X Title]
+      tags: [datebase, tag2, tag3]
       math: true
       mermaid: true
 
