@@ -94,8 +94,8 @@ jekyll_compose:
         name: Sophia-whale
         link: https://github.com/sophia-whale
       description:
-      categories: [Datebase, Chapter X Title]
-      tags: [datebase, tag2, tag3]
+      categories: \[Datebase, Chapter X Title]
+      tags: \[datebase, tag2, tag3]
       math: true
       mermaid: true
 
