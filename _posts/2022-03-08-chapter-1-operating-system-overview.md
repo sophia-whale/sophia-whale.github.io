@@ -6,8 +6,8 @@ author:
   name: Sophia-whale
   link: https://github.com/sophia-whale
 description:
-categories: "[Operating System, Chapter 1 Operating System Overview]
-tags: [operating system]
+categories: [Operating System, Chapter 1 Operating System Overview]
+tags: [operating system, interrupt, system call]
 math: true
 mermaid: true
 ---
