@@ -1,5 +1,4 @@
-# Whale's blog
-
+# [Whale's blog](https://sophia-whale.github.io/)
 This blog is dedicated to documenting the difficult learning journey of a rookie.
 
 ## Usage
